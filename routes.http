@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos 
+Content-Type: application/json
+
+{
+  "title": "video gaynes",
+  "description": "desc video",
+  "duration": 180
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/502caec3-2730-457b-ad42-2c667f59f194
+Content-Type: application/json
+
+{
+  "title": "1 video",
+  "description": "video desc",
+  "duration": 200
+}
+
+###
+
+DELETE http://localhost:3333/videos/502caec3-2730-457b-ad42-2c667f59f194
