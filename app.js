@@ -13,6 +13,9 @@ server.get('/', async (request, reply) => {
   return `Conectado ao Neon! Versão: ${result[0].version}`;
 });
 
-server.listen({ port: process.env.PORT ?? 3000 }, () =>
+server.listen({
+  host: '0.0.0.0',
+  port: process.env.PORT ?? 3000
+}, () =>
   console.log('Servidor rodando em http://localhost:3000')
 );

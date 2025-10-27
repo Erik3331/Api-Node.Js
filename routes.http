@@ -1,27 +1,25 @@
-POST http://localhost:3333/videos 
+### Criar vídeo
+POST https://api-node-js-6382.onrender.com/videos
 Content-Type: application/json
 
 {
-  "title": "video gaynes",
-  "description": "desc video",
-  "duration": 180
+  "title": "Meu Vídeo",
+  "description": "Descrição do vídeo",
+  "duration": 120
 }
 
-###
+### 
+GET https://api-node-js-6382.onrender.com/videos
 
-GET http://localhost:3333/videos
-
-###
-
-PUT http://localhost:3333/videos/502caec3-2730-457b-ad42-2c667f59f194
+### 
+PUT https://api-node-js-6382.onrender.com/videos/<ID_DO_VIDEO>
 Content-Type: application/json
 
 {
-  "title": "1 video",
-  "description": "video desc",
+  "title": "Vídeo Atualizado",
+  "description": "Nova descrição",
   "duration": 200
 }
 
 ###
-
-DELETE http://localhost:3333/videos/502caec3-2730-457b-ad42-2c667f59f194
+DELETE https://api-node-js-6382.onrender.com/videos/<ID_DO_VIDEO>
